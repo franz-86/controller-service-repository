@@ -1,0 +1,20 @@
+{
+  "name": "mini-library",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Piccola API per la gestione dei prestiti di una biblioteca",
+  "type": "commonjs",
+  "scripts": {
+    "db:init": "node database/init.js",
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.9.0",
+    "express": "^5.1.0"
+  }
+}
